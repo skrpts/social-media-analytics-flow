@@ -1,0 +1,99 @@
+---
+type: workflow
+id: social-media-analytics-flow
+title: Social Media Analytics Flow
+description: "Social media performance analysis, content strategy optimisation, and audience insight extraction"
+tags: [Production, Tested]
+connections:
+  - target: engagement-analysis
+    type: uses
+  - target: audience-profiling
+    type: uses
+  - target: content-performance-modelling
+    type: uses
+  - target: performance-report-generator
+    type: uses
+  - target: content-strategy-advisor
+    type: uses
+  - target: audience-insight-extractor
+    type: uses
+  - target: hashtag-strategy-prompt
+    type: uses
+  - target: platform-comparison-prompt
+    type: uses
+  - target: claude-service
+    type: runs_on
+  - target: social-media-metrics-reference
+    type: references
+  - target: social-media-analytics-guide
+    type: references
+metadata:
+  estimated_duration: "20-35 minutes"
+  trigger: manual
+---
+
+## Overview
+
+This workflow analyses social media performance data to produce actionable insights, content strategy recommendations, and audience intelligence. It moves from raw metrics analysis through audience profiling, content performance modelling, and strategic recommendations. Designed to run on a regular cadence (weekly or monthly) to track trends and optimise social media strategy.
+
+## Pipeline Stages
+
+### Stage 1: Performance Data Analysis
+
+**Input:** Raw social media metrics exported from platform analytics (impressions, reach, engagement, followers, clicks) across the reporting period
+
+Invoke the **engagement-analysis** skill to process raw metrics and identify performance patterns, trends, and anomalies. Then run the **performance-report-generator** prompt to produce a structured performance report.
+
+**Output:** Performance report with key metrics, trend analysis, top-performing content identification, and underperforming content flags.
+
+**Gate:** Minimum one full week of data required for meaningful analysis. Monthly reporting requires at least 4 weeks.
+
+### Stage 2: Audience Insight Extraction
+
+**Input:** Engagement data by content type, demographic data (if available), follower growth patterns, audience activity patterns
+
+Invoke the **audience-profiling** skill to build audience profiles from engagement patterns. Then run the **audience-insight-extractor** prompt to produce detailed audience intelligence.
+
+**Output:** Audience profiles including content preferences, peak activity times, demographic indicators, and engagement behaviour patterns.
+
+### Stage 3: Content Performance Modelling
+
+**Input:** Performance data from Stage 1, audience insights from Stage 2, content calendar and posting history
+
+Invoke the **content-performance-modelling** skill to identify what drives high performance. Analyse content by format, topic, posting time, length, visual style, and tone to build a performance model.
+
+**Output:** Content performance model showing which variables correlate with high engagement, reach, and conversion.
+
+### Stage 4: Platform Comparison & Resource Allocation
+
+**Input:** Performance data across all active platforms, current resource allocation (time and budget per platform)
+
+Invoke the **platform-comparison-prompt** to compare performance across platforms and recommend resource reallocation based on ROI.
+
+**Output:** Platform comparison matrix with resource allocation recommendations.
+
+**Note:** This stage is optional for single-platform strategies. Most valuable for teams managing 3+ platforms.
+
+### Stage 5: Strategy Recommendations
+
+**Input:** All outputs from Stages 1-4, current content strategy and goals
+
+Invoke the **content-strategy-advisor** prompt to produce strategic recommendations based on the performance data, audience insights, and content model. Then run the **hashtag-strategy-prompt** to develop hashtag and topic strategies.
+
+**Output:** Content strategy adjustment recommendations, updated posting schedule, content mix recommendations, hashtag strategy, and topic calendar suggestions.
+
+## Error Handling
+
+- If data is insufficient for statistical confidence, note the limitation and provide directional insights rather than definitive conclusions
+- If audience demographic data is unavailable, infer audience characteristics from engagement patterns and content preferences, flagging these as inferences
+- If a platform's API changes or data format shifts, adapt the analysis approach and note any comparability issues with previous periods
+- If engagement drops across all content, investigate external factors (algorithm changes, seasonal patterns, audience fatigue) before recommending content changes
+- If metrics appear anomalous (sudden spikes or drops), investigate the cause (viral content, paid promotion, bot activity) before including in trend analysis
+
+## Reporting Cadence
+
+| Report Type | Frequency | Depth | Audience |
+|-------------|-----------|-------|----------|
+| Quick metrics check | Weekly | KPI dashboard only | Social media manager |
+| Performance report | Fortnightly/Monthly | Full analysis with recommendations | Marketing team |
+| Strategic review | Quarterly | Comprehensive with audience insights and strategy shifts | Marketing leadership |

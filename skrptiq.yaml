@@ -1,0 +1,37 @@
+name: "social-media-analytics-flow"
+display_name: "Social Media Analytics Flow"
+description: "Social media performance analysis, content strategy optimisation, and audience insight extraction"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+licence: "MIT"
+repository: "https://github.com/skrpts/social-media-analytics-flow"
+
+category: "marketing"
+tags:
+  - "social-media"
+  - "analytics"
+  - "content-strategy"
+  - "audience-insights"
+  - "performance-reporting"
+
+requires:
+  services:
+    - "anthropic-claude"
+  permissions: []
+  data_handling:
+    - "social-media-metrics"
+    - "audience-data"
+
+contents:
+  skills: 3
+  prompts: 5
+  workflows: 1
+  services: 1
+  sources: 1
+  documents: 1
+  assets: 1
+  total: 13
