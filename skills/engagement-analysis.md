@@ -5,7 +5,7 @@ title: Engagement Analysis
 description: "Analyses social media engagement metrics to identify performance patterns, trends, and actionable insights"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: social-media-metrics-reference
     type: references

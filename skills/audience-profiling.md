@@ -5,7 +5,7 @@ title: Audience Profiling
 description: "Builds audience profiles from social media engagement patterns, demographics, and behavioural signals"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: social-media-metrics-reference
     type: references

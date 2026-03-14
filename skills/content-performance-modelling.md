@@ -5,7 +5,7 @@ title: Content Performance Modelling
 description: "Identifies the variables that drive social media content performance and builds predictive models for optimisation"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: social-media-metrics-reference
     type: references

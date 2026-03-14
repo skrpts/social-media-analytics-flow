@@ -19,8 +19,7 @@ tags:
   - "performance-reporting"
 
 requires:
-  services:
-    - "anthropic-claude"
+  services: []
   permissions: []
   data_handling:
     - "social-media-metrics"

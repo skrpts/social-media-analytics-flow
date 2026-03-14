@@ -21,7 +21,7 @@ connections:
     type: uses
   - target: platform-comparison-prompt
     type: uses
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: social-media-metrics-reference
     type: references
@@ -97,3 +97,48 @@ Invoke the **content-strategy-advisor** prompt to produce strategic recommendati
 | Quick metrics check | Weekly | KPI dashboard only | Social media manager |
 | Performance report | Fortnightly/Monthly | Full analysis with recommendations | Marketing team |
 | Strategic review | Quarterly | Comprehensive with audience insights and strategy shifts | Marketing leadership |
+
+## Inputs
+
+| Name | Required | Description | Example |
+|------|----------|-------------|---------|
+| `{{input.raw_social_media_metrics}}` | Yes | Raw social media metrics exported from platform analytics  across the reporting period | `Paste the latest metrics, exported data, or summary notes relevant to the workflow.` |
+| `{{input.engagement_data_by_content}}` | Yes | Engagement data by content type | `Paste the latest metrics, exported data, or summary notes relevant to the workflow.` |
+| `{{input.demographic_data}}` | Yes | demographic data | `Paste the latest metrics, exported data, or summary notes relevant to the workflow.` |
+| `{{input.follower_growth_patterns}}` | No | follower growth patterns | `Paste the relevant brief, notes, source material, or dataset here.` |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| Performance report | Performance report with key metrics, trend analysis, top-performing content identification, and underperforming content flags |
+| Audience profiles including content preferences, peak activity times, demographic indicators, and engagement behaviour patterns | Audience profiles including content preferences, peak activity times, demographic indicators, and engagement behaviour patterns |
+| Content performance model showing which variables correlate | Content performance model showing which variables correlate with high engagement, reach, and conversion |
+| Platform comparison matrix | Platform comparison matrix with resource allocation recommendations |
+| Content strategy adjustment recommendations, updated posting schedule, content mix recommendations, hashtag strategy, and topic calendar suggestions | Content strategy adjustment recommendations, updated posting schedule, content mix recommendations, hashtag strategy, and topic calendar suggestions |
+
+## Setup
+
+Before running this workflow:
+
+1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
+2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
+
+## Provider Notes
+
+- Most stages work with any capable model; stronger models usually improve synthesis, judgement, and writing quality.
+- Extraction, classification, and formatting steps generally run well on smaller or faster models.
+- Because there are no vendor-specific integrations here, provider choice is mostly a trade-off between speed, quality, and cost.
+
+## Example Input
+
+To test this workflow immediately after import:
+
+```
+Raw Social Media Metrics: "Paste the latest metrics, exported data, or summary notes relevant to the workflow."
+Engagement Data By Content: "Paste the latest metrics, exported data, or summary notes relevant to the workflow."
+Demographic Data: "Paste the latest metrics, exported data, or summary notes relevant to the workflow."
+Follower Growth Patterns: "Paste the relevant brief, notes, source material, or dataset here."
+```
+
