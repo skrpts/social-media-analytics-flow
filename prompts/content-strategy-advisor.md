@@ -17,20 +17,20 @@ metadata:
 You are a social media content strategist advising on strategy adjustments based on performance data and audience insights. Your recommendations must be specific, data-justified, and implementable within the team's current resources.
 
 **Current Content Strategy:**
-{{current_strategy}}
+Based on the content patterns and posting history visible in the metrics data, describe the current content strategy.
 
 **Performance Data Summary:**
-{{performance_summary}}
+Using the performance report from Stage 1.
 
 **Audience Insights:**
-{{audience_insights}}
+Using the audience insights from Stage 2.
 
 **Content Performance Model Findings:**
-{{performance_model}}
+Using the content performance model from Stage 3.
 
-**Team Resources:** {{team_resources}} (e.g., "1 social media manager, freelance designer, 10 hours/week content creation")
-**Business Goals:** {{business_goals}}
-**Platforms:** {{platforms}}
+**Team Resources:** Recommend team resource allocation based on the strategy scope.
+**Business Goals:** Based on the industry context and performance data, identify the key business goals for social media.
+**Platforms:** Using the platforms from Stage 1.
 
 ## Instructions
 

@@ -96,16 +96,19 @@ Invoke the **content-strategy-advisor** prompt to produce strategic recommendati
 |-------------|-----------|-------|----------|
 | Quick metrics check | Weekly | KPI dashboard only | Social media manager |
 | Performance report | Fortnightly/Monthly | Full analysis with recommendations | Marketing team |
-| Strategic review | Quarterly | Comprehensive with audience insights and strategy shifts | Marketing leadership |
+| Strategic review | Quarterly | Full review with audience insights and strategy shifts | Marketing leadership |
 
 ## Inputs
 
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
-| `{{input.raw_social_media_metrics}}` | Yes | Raw social media metrics exported from platform analytics  across the reporting period | `Paste the latest metrics, exported data, or summary notes relevant to the workflow.` |
+| `{{input.platforms}}` | Yes | Social media platforms being analysed | `Instagram, LinkedIn, X, TikTok` |
+| `{{input.account_name}}` | Yes | Account or brand name | `Acme Corp` |
+| `{{input.industry}}` | Yes | Industry or niche | `B2B SaaS marketing` |
+| `{{input.raw_social_media_metrics}}` | Yes | Raw social media metrics exported from platform analytics across the reporting period | `Paste the latest metrics, exported data, or summary notes relevant to the workflow.` |
 | `{{input.engagement_data_by_content}}` | Yes | Engagement data by content type | `Paste the latest metrics, exported data, or summary notes relevant to the workflow.` |
-| `{{input.demographic_data}}` | Yes | demographic data | `Paste the latest metrics, exported data, or summary notes relevant to the workflow.` |
-| `{{input.follower_growth_patterns}}` | No | follower growth patterns | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.demographic_data}}` | Yes | Demographic data | `Paste the latest metrics, exported data, or summary notes relevant to the workflow.` |
+| `{{input.follower_growth_patterns}}` | No | Follower growth patterns | `Paste the relevant brief, notes, source material, or dataset here.` |
 
 ## Outputs
 
@@ -136,6 +139,9 @@ Before running this workflow:
 To test this workflow immediately after import:
 
 ```
+Platforms: "Instagram, LinkedIn, X, TikTok"
+Account Name: "Acme Corp"
+Industry: "B2B SaaS marketing"
 Raw Social Media Metrics: "Paste the latest metrics, exported data, or summary notes relevant to the workflow."
 Engagement Data By Content: "Paste the latest metrics, exported data, or summary notes relevant to the workflow."
 Demographic Data: "Paste the latest metrics, exported data, or summary notes relevant to the workflow."
