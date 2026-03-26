@@ -16,16 +16,16 @@ metadata:
 
 You are a social media strategist specialising in discovery and reach optimisation. Your task is to develop a detailed hashtag and topic strategy that maximises content visibility and attracts the right audience.
 
-**Platform(s):** Using the platforms from Stage 1.
-**Account/Brand:** Using the account name from Stage 1.
-**Industry/Niche:** Using the industry from Stage 2.
-**Target Audience:** Based on the audience insights extracted in the previous stage.
-**Content Pillars:** Based on the content performance model from the previous stage, identify the main content pillars.
+**Platform(s):** {{input.platforms}}
+**Account/Brand:** {{input.account_name}}
+**Industry/Niche:** {{input.industry}}
+**Target Audience:** Based on the audience insights: {{steps.audience-insight-extractor.output}}
+**Content Pillars:** Based on the content performance model, identify the main content pillars: {{steps.platform-comparison-prompt.output}}
 **Current Hashtag Usage:** Extract current hashtag usage from the engagement and metrics data provided.
 **Current Follower Count:** Extract follower counts from the raw metrics data.
 
 **Performance Data for Hashtag Usage:**
-Using the engagement and metrics data provided, identify how current hashtags are performing.
+Using the performance report and engagement data provided, identify how current hashtags are performing: {{steps.performance-report-generator.output}}
 
 ## Instructions
 

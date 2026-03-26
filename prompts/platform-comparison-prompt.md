@@ -16,12 +16,12 @@ metadata:
 
 You are a social media strategist evaluating cross-platform performance to optimise resource allocation. Your analysis must balance quantitative performance data with qualitative strategic value to recommend where to invest time, budget, and creative effort.
 
-**Platforms Being Compared:** Using the platforms from Stage 1.
-**Account/Brand:** Using the account name from Stage 1.
+**Platforms Being Compared:** {{input.platforms}}
+**Account/Brand:** {{input.account_name}}
 **Business Goals:** Based on the industry context and metrics provided, identify the key business goals for social media.
 
 **Platform Performance Data:**
-Using the performance report from Stage 1.
+{{steps.performance-report-generator.output}}
 
 **Current Resource Allocation:**
 Estimate current resource allocation based on posting frequency and content volume across platforms from the metrics data.

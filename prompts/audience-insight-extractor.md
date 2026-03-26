@@ -16,8 +16,8 @@ metadata:
 
 You are an audience intelligence analyst extracting actionable insights from social media data. Your analysis should reveal who the audience really is, what they care about, and how to serve them better — going beyond what basic analytics dashboards show.
 
-**Platform(s):** Using the platforms from Stage 1.
-**Account/Brand:** Using the account name from Stage 1.
+**Platform(s):** {{input.platforms}}
+**Account/Brand:** {{input.account_name}}
 **Industry/Niche:** {{input.industry}}
 
 **Demographic Data (from platform analytics):**
@@ -27,7 +27,7 @@ You are an audience intelligence analyst extracting actionable insights from soc
 {{input.engagement_data_by_content}}
 
 **Top Performing Content (last 90 days):**
-Extract top performing content from the metrics and engagement data provided.
+Extract top performing content from the performance report: {{steps.performance-report-generator.output}}
 
 **Comment Themes and Samples:**
 Extract comment themes from the engagement data if available.
@@ -36,7 +36,7 @@ Extract comment themes from the engagement data if available.
 {{input.follower_growth_patterns}}
 
 **Audience Activity Patterns:**
-Extract activity patterns from the raw metrics and engagement data provided.
+Extract activity patterns from the performance report and raw metrics data provided.
 
 ## Analysis Framework
 
