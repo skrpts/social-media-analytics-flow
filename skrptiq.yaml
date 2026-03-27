@@ -19,9 +19,11 @@ tags:
   - "performance-reporting"
 
 requires:
-  services: []
+  services:
+    - "llm-service"
   permissions: []
   data_handling:
+    - "pii"
     - "social-media-metrics"
     - "audience-data"
 
