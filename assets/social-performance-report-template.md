@@ -3,7 +3,7 @@ type: asset
 id: social-performance-report-template
 title: Social Performance Report Template
 description: "Structured template for periodic social media performance reports"
-tags: [Production]
+tags: [Production, data:metrics, analysis:content]
 connections: []
 metadata:
   asset_type: "template"

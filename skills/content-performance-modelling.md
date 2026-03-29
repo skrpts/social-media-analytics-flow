@@ -3,7 +3,7 @@ type: skill
 id: content-performance-modelling
 title: Content Performance Modelling
 description: "Identifies the variables that drive social media content performance and builds predictive models for optimisation"
-tags: [Production, Tested]
+tags: [Production, Tested, analysis:content, data:metrics, optimisation:content]
 connections:
   - target: llm-service
     type: runs_on

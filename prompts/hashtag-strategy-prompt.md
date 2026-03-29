@@ -3,7 +3,7 @@ type: prompt
 id: hashtag-strategy-prompt
 title: Hashtag Strategy Prompt
 description: "Develops hashtag and topic strategies for maximising reach and engagement on social media"
-tags: [Production]
+tags: [Production, data:metrics, analysis:content]
 connections:
   - target: content-performance-modelling
     type: derived_from

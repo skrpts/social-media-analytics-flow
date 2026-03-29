@@ -3,7 +3,7 @@ type: skill
 id: audience-profiling
 title: Audience Profiling
 description: "Builds audience profiles from social media engagement patterns, demographics, and behavioural signals"
-tags: [Production, Tested]
+tags: [Production, Tested, analysis:audience, data:metrics]
 connections:
   - target: llm-service
     type: runs_on

@@ -3,7 +3,7 @@ type: document
 id: social-media-analytics-guide
 title: Social Media Analytics Guide
 description: "Practical guide to social media measurement, reporting, and data-driven strategy"
-tags: [Production, Tested]
+tags: [Production, Tested, data:metrics, analysis:content]
 connections:
   - target: social-media-metrics-reference
     type: references

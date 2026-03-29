@@ -3,7 +3,7 @@ type: source
 id: social-media-metrics-reference
 title: Social Media Metrics Reference
 description: "Reference guide to social media KPIs, benchmarks, and measurement best practices"
-tags: [Production, Tested]
+tags: [Production, Tested, data:metrics, analysis:content]
 connections: []
 metadata:
   last_updated: "2026-03"

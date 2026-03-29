@@ -3,7 +3,7 @@ type: prompt
 id: content-strategy-advisor
 title: Content Strategy Advisor
 description: "Recommends content strategy adjustments based on performance data and audience insights"
-tags: [Production]
+tags: [Production, analysis:audience, data:metrics]
 connections:
   - target: content-performance-modelling
     type: derived_from

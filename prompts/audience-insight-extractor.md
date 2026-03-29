@@ -3,7 +3,7 @@ type: prompt
 id: audience-insight-extractor
 title: Audience Insight Extractor
 description: "Extracts audience insights from engagement patterns, demographics, and behavioural signals"
-tags: [Production]
+tags: [Production, analysis:audience, data:metrics]
 connections:
   - target: audience-profiling
     type: derived_from

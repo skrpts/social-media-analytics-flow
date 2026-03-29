@@ -3,7 +3,7 @@ type: skill
 id: engagement-analysis
 title: Engagement Analysis
 description: "Analyses social media engagement metrics to identify performance patterns, trends, and actionable insights"
-tags: [Production, Tested]
+tags: [Production, Tested, analysis:content, data:metrics]
 connections:
   - target: llm-service
     type: runs_on
