@@ -29,11 +29,11 @@ requires:
     - "audience-data"
 
 contents:
-  skills: 3
+  skills: 4
   prompts: 5
   workflows: 1
   services: 1
-  sources: 1
+  sources: 2
   documents: 1
   assets: 1
-  total: 13
+  total: 15

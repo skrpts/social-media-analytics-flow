@@ -21,11 +21,15 @@ connections:
     type: uses
   - target: platform-comparison-prompt
     type: uses
+  - target: audience-segmentation
+    type: uses
   - target: llm-service
     type: runs_on
   - target: social-media-metrics-reference
     type: references
   - target: social-media-analytics-guide
+    type: references
+  - target: campaign-performance-benchmarks
     type: references
 metadata:
   estimated_duration: "20-35 minutes"
