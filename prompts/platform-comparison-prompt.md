@@ -3,7 +3,7 @@ type: prompt
 id: platform-comparison-prompt
 title: Platform Comparison Prompt
 description: "Compares social media performance across platforms and recommends resource allocation"
-tags: [Production, planning:team, data:metrics]
+tags: [Production, Metrics, Planning]
 connections:
   - target: engagement-analysis
     type: derived_from

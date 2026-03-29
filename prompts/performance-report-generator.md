@@ -3,7 +3,7 @@ type: prompt
 id: performance-report-generator
 title: Performance Report Generator
 description: "Generates a structured social media performance report from raw metrics data"
-tags: [Production, data:metrics, analysis:content]
+tags: [Production, Metrics, Content]
 connections:
   - target: engagement-analysis
     type: derived_from

@@ -3,7 +3,7 @@ type: workflow
 id: social-media-analytics-flow
 title: Social Media Analytics Flow
 description: "Social media performance analysis, content strategy optimisation, and audience insight extraction"
-tags: [Production, Tested, analysis:audience, data:metrics]
+tags: [Production, Tested, Audience, Metrics]
 connections:
   - target: engagement-analysis
     type: uses
