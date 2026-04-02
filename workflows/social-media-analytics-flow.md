@@ -34,6 +34,8 @@ connections:
 metadata:
   estimated_duration: "20-35 minutes"
   trigger: manual
+  - target: brand-voice-guide
+    type: references
 ---
 
 ## Overview
