@@ -31,8 +31,6 @@ connections:
     type: references
   - target: campaign-performance-benchmarks
     type: references
-  - target: brand-voice-guide
-    type: references
 metadata:
   estimated_duration: "20-35 minutes"
   trigger: manual
