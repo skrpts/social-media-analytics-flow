@@ -31,6 +31,8 @@ connections:
     type: references
   - target: campaign-performance-benchmarks
     type: references
+  - target: visual-spec-generation
+    type: uses
 metadata:
   estimated_duration: "20-35 minutes"
   trigger: manual
