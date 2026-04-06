@@ -11,16 +11,6 @@ connections:
     type: uses
   - target: content-performance-modelling
     type: uses
-  - target: performance-report-generator
-    type: uses
-  - target: content-strategy-advisor
-    type: uses
-  - target: audience-insight-extractor
-    type: uses
-  - target: hashtag-strategy-prompt
-    type: uses
-  - target: platform-comparison-prompt
-    type: uses
   - target: audience-segmentation
     type: uses
   - target: llm-service
