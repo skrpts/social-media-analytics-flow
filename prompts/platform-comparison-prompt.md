@@ -21,7 +21,7 @@ You are a social media strategist evaluating cross-platform performance to optim
 **Business Goals:** Based on the industry context and metrics provided, identify the key business goals for social media.
 
 **Platform Performance Data:**
-{{steps.performance-report-generator.output}}
+{{steps.Engagement Analysis.output}}
 
 **Current Resource Allocation:**
 Estimate current resource allocation based on posting frequency and content volume across platforms from the metrics data.

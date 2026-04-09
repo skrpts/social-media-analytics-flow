@@ -19,13 +19,13 @@ You are a social media strategist specialising in discovery and reach optimisati
 **Platform(s):** {{input.platforms}}
 **Account/Brand:** {{input.account_name}}
 **Industry/Niche:** {{input.industry}}
-**Target Audience:** Based on the audience insights: {{steps.audience-insight-extractor.output}}
-**Content Pillars:** Based on the content performance model, identify the main content pillars: {{steps.platform-comparison-prompt.output}}
+**Target Audience:** Based on the audience insights: {{steps.Audience Profiling.output}}
+**Content Pillars:** Based on the content performance model, identify the main content pillars: {{steps.Engagement Analysis.output}}
 **Current Hashtag Usage:** Extract current hashtag usage from the engagement and metrics data provided.
 **Current Follower Count:** Extract follower counts from the raw metrics data.
 
 **Performance Data for Hashtag Usage:**
-Using the performance report and engagement data provided, identify how current hashtags are performing: {{steps.performance-report-generator.output}}
+Using the performance report and engagement data provided, identify how current hashtags are performing: {{steps.Engagement Analysis.output}}
 
 ## Instructions
 

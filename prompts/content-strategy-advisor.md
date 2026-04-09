@@ -20,13 +20,13 @@ You are a social media content strategist advising on strategy adjustments based
 Based on the content patterns and posting history visible in the metrics data, describe the current content strategy.
 
 **Performance Data Summary:**
-{{steps.performance-report-generator.output}}
+{{steps.Engagement Analysis.output}}
 
 **Audience Insights:**
-{{steps.audience-insight-extractor.output}}
+{{steps.Audience Profiling.output}}
 
 **Content Performance Model Findings:**
-{{steps.platform-comparison-prompt.output}}
+{{steps.Engagement Analysis.output}}
 
 **Team Resources:** Recommend team resource allocation based on the strategy scope.
 **Business Goals:** Based on the industry context and performance data, identify the key business goals for social media.

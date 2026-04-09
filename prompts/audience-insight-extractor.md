@@ -27,7 +27,7 @@ You are an audience intelligence analyst extracting actionable insights from soc
 {{input.engagement_data_by_content}}
 
 **Top Performing Content (last 90 days):**
-Extract top performing content from the performance report: {{steps.performance-report-generator.output}}
+Extract top performing content from the performance report: {{steps.Engagement Analysis.output}}
 
 **Comment Themes and Samples:**
 Extract comment themes from the engagement data if available.
