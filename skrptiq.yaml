@@ -2,7 +2,7 @@ id: "b66ef7b3-87ec-44a8-a61c-e8d1352ca6ce"
 name: "social-media-analytics-flow"
 display_name: "Social Media Analytics Flow"
 description: "Social media performance analysis, content strategy optimisation, and audience insight extraction"
-version: "1.1.4"
+version: "1.1.5"
 engine: ">=1.0.0"
 
 author:

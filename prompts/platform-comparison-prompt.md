@@ -4,6 +4,19 @@ id: platform-comparison-prompt
 title: Platform Comparison Prompt
 description: "Compares social media performance across platforms and recommends resource allocation"
 tags: [Production, Metrics, Planning]
+inputs:
+  platforms:
+    label: "Platforms"
+    description: "Social media platforms to target"
+    example: "Twitter, LinkedIn, YouTube"
+    required: true
+    type: text
+  account_name:
+    label: "Account Name"
+    description: "The social media account or brand name"
+    example: "@skrptiq"
+    required: true
+    type: text
 connections:
   - target: engagement-analysis
     type: derived_from

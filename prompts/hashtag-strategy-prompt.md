@@ -4,6 +4,25 @@ id: hashtag-strategy-prompt
 title: Hashtag Strategy Prompt
 description: "Develops hashtag and topic strategies for maximising reach and engagement on social media"
 tags: [Production, Metrics, Content]
+inputs:
+  platforms:
+    label: "Platforms"
+    description: "Social media platforms to target"
+    example: "Twitter, LinkedIn, YouTube"
+    required: true
+    type: text
+  account_name:
+    label: "Account Name"
+    description: "The social media account or brand name"
+    example: "@skrptiq"
+    required: true
+    type: text
+  industry:
+    label: "Industry"
+    description: "The industry or sector"
+    example: "B2B SaaS"
+    required: true
+    type: text
 connections:
   - target: content-performance-modelling
     type: derived_from

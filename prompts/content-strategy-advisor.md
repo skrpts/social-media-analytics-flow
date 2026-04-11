@@ -4,6 +4,13 @@ id: content-strategy-advisor
 title: Content Strategy Advisor
 description: "Recommends content strategy adjustments based on performance data and audience insights"
 tags: [Production, Audience, Metrics]
+inputs:
+  platforms:
+    label: "Platforms"
+    description: "Social media platforms to target"
+    example: "Twitter, LinkedIn, YouTube"
+    required: true
+    type: text
 connections:
   - target: content-performance-modelling
     type: derived_from

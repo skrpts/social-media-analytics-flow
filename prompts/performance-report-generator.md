@@ -4,6 +4,25 @@ id: performance-report-generator
 title: Performance Report Generator
 description: "Generates a structured social media performance report from raw metrics data"
 tags: [Production, Metrics, Content]
+inputs:
+  platforms:
+    label: "Platforms"
+    description: "Social media platforms to target"
+    example: "Twitter, LinkedIn, YouTube"
+    required: true
+    type: text
+  account_name:
+    label: "Account Name"
+    description: "The social media account or brand name"
+    example: "@skrptiq"
+    required: true
+    type: text
+  raw_social_media_metrics:
+    label: "Social Media Metrics"
+    description: "Raw metrics data from social media platforms"
+    example: "Impressions, engagement rate, follower growth, top posts by platform"
+    required: true
+    type: text
 connections:
   - target: engagement-analysis
     type: derived_from

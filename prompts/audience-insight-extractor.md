@@ -4,6 +4,43 @@ id: audience-insight-extractor
 title: Audience Insight Extractor
 description: "Extracts audience insights from engagement patterns, demographics, and behavioural signals"
 tags: [Production, Audience, Metrics]
+inputs:
+  platforms:
+    label: "Platforms"
+    description: "Social media platforms to target"
+    example: "Twitter, LinkedIn, YouTube"
+    required: true
+    type: text
+  account_name:
+    label: "Account Name"
+    description: "The social media account or brand name"
+    example: "@skrptiq"
+    required: true
+    type: text
+  industry:
+    label: "Industry"
+    description: "The industry or sector"
+    example: "B2B SaaS"
+    required: true
+    type: text
+  demographic_data:
+    label: "Demographic Data"
+    description: "Audience demographic information"
+    example: "Age, location, job title, industry breakdown"
+    required: true
+    type: text
+  engagement_data_by_content:
+    label: "Engagement Data"
+    description: "Engagement metrics broken down by content piece"
+    example: "Post title, impressions, likes, comments, shares, click-through rate"
+    required: true
+    type: text
+  follower_growth_patterns:
+    label: "Follower Growth"
+    description: "Follower growth data over time"
+    example: "Weekly follower counts by platform for the last 3 months"
+    required: true
+    type: text
 connections:
   - target: audience-profiling
     type: derived_from
