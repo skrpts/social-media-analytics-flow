@@ -26,6 +26,21 @@ connections:
 metadata:
   estimated_duration: "20-35 minutes"
   trigger: manual
+execution:
+  - skill: "engagement-analysis"
+    step_type: "synthesis"
+  - skill: "audience-profiling"
+    step_type: "synthesis"
+    input_from: "engagement-analysis"
+  - skill: "content-performance-modelling"
+    step_type: "synthesis"
+    input_from: "audience-profiling"
+  - skill: "audience-segmentation"
+    step_type: "synthesis"
+    input_from: "content-performance-modelling"
+  - skill: "visual-spec-generation"
+    step_type: "synthesis"
+    input_from: "audience-segmentation"
 ---
 
 ## Overview
