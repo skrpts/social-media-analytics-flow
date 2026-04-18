@@ -36,10 +36,12 @@ composite_steps:
 execution:
   - skill: "engagement-analysis"
     step_type: "synthesis"
+    prompt: "performance-report-generator"
   - skill: "audience-profiling"
     step_type: "synthesis"
   - skill: "content-performance-modelling"
     step_type: "synthesis"
+    prompt: "content-strategy-advisor"
   - skill: "audience-segmentation"
     step_type: "synthesis"
     context:
