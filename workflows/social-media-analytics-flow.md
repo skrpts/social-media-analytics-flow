@@ -38,15 +38,18 @@ execution:
     step_type: "synthesis"
     prompt: "performance-report-generator"
   - skill: "audience-profiling"
+    prompt: "audience-insight-extractor"
     step_type: "synthesis"
   - skill: "content-performance-modelling"
     step_type: "synthesis"
     prompt: "content-strategy-advisor"
   - skill: "audience-segmentation"
+    prompt: "segment-audience"
     step_type: "synthesis"
     context:
       market_context: ""
   - skill: "visual-spec-generation"
+    prompt: "generate-visual-spec"
     step_type: "synthesis"
 ---
 
