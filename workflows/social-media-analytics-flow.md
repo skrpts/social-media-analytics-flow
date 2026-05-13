@@ -47,7 +47,7 @@ execution:
     prompt: "segment-audience"
     step_type: "synthesis"
     context:
-      market_context: ""
+      market_context: "No additional market context"
   - skill: "visual-spec-generation"
     prompt: "generate-visual-spec"
     step_type: "synthesis"
