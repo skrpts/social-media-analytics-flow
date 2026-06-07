@@ -2,7 +2,7 @@ id: "b66ef7b3-87ec-44a8-a61c-e8d1352ca6ce"
 name: "social-media-analytics-flow"
 display_name: "Social Media Analytics Flow"
 description: "Social media performance analysis, content strategy optimisation, and audience insight extraction"
-version: "1.1.21"
+version: "1.1.22"
 engine: ">=0.1.0"
 
 author:
@@ -19,6 +19,32 @@ tags:
   - "performance-reporting"
   - "social-media"
 
+dependencies:
+  - id: "977ca840-8322-4df1-bc13-98d43b3e41a8"
+    name: "audience-segmentation"
+    version: 1.0.1
+    checksum: "sha256:bcd35f100fcf4843c8b8583541ae60952e1cb5d6001700f56c5e85533f0f672b"
+  - id: "847dbe80-fe03-452c-be57-052a527f5e87"
+    name: "campaign-performance-benchmarks"
+    version: 1.0.1
+    checksum: "sha256:eb6a5a515b11d9d03f972b4781b4f9789e93d6524ada98658d13c9811f7b55e1"
+  - id: "a79f8fcc-6b8f-4510-9314-394b7b4492f0"
+    name: "generate-visual-spec"
+    version: 1.0.1
+    checksum: "sha256:98d9bbb95bb9427538787aa645c7eb479be365b4b7bfd9604fdaa841280d6a28"
+  - id: "fcab9536-a13e-49c9-b0c3-bb3097682e69"
+    name: "llm-service"
+    version: 1.0.1
+    checksum: "sha256:455c8bf590a9426d830bffd1a741afa058149bc29c58186c34d0d8699bea4bda"
+  - id: "18479da6-a5f3-4755-b9a4-5bdbc9196b0d"
+    name: "segment-audience"
+    version: 1.0.1
+    checksum: "sha256:0b175d41bfbf4caba8ef410095f2fbdfd3084352376817a96259340e07ad09e4"
+  - id: "a8ee94d5-a20c-414a-a882-a8d3e9b9f6ab"
+    name: "visual-spec-generation"
+    version: 1.0.1
+    checksum: "sha256:22d79483954e4fd298636955aa9a376bd042ee3d8238fbc5d30e961cbdb9be4a"
+
 requires:
   services:
     - "llm-service"
@@ -29,11 +55,11 @@ requires:
     - "audience-data"
 
 contents:
-  skills: 5
-  prompts: 7
+  skills: 3
+  prompts: 5
   workflows: 1
-  services: 1
-  sources: 2
+  services: 0
+  sources: 1
   documents: 1
   assets: 1
-  total: 18
+  total: 12
