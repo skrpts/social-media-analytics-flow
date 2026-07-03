@@ -37,20 +37,25 @@ execution:
   - skill: "engagement-analysis"
     step_type: "synthesis"
     prompt: "performance-report-generator"
+    output: { name: "performance_report", type: "text" }
   - skill: "audience-profiling"
     prompt: "audience-insight-extractor"
     step_type: "synthesis"
+    output: { name: "audience_insights", type: "text" }
   - skill: "content-performance-modelling"
     step_type: "synthesis"
     prompt: "content-strategy-advisor"
+    output: { name: "content_strategy", type: "text" }
   - skill: "audience-segmentation"
     prompt: "segment-audience"
     step_type: "synthesis"
+    output: { name: "audience_segments", type: "list" }
     context:
       market_context: "No additional market context"
   - skill: "visual-spec-generation"
     prompt: "generate-visual-spec"
     step_type: "synthesis"
+    output: { name: "visual_spec", type: "text" }
 ---
 
 ## Overview
