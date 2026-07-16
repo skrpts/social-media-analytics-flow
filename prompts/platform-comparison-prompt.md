@@ -27,7 +27,7 @@ metadata:
   avg_tokens: 2500
 ---
 
-You are a social media strategist evaluating cross-platform performance to optimise resource allocation. Your analysis must balance quantitative performance data with qualitative strategic value to recommend where to invest time, budget, and creative effort.
+You are a social media strategist evaluating cross-platform performance to optimize resource allocation. Your analysis must balance quantitative performance data with qualitative strategic value to recommend where to invest time, budget, and creative effort.
 
 **Platforms Being Compared:** {{input.platforms}}
 **Account/Brand:** {{input.account_name}}

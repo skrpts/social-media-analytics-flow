@@ -95,7 +95,7 @@ Not all engagements are equal. Ranked by value:
 
 **Audience Growth Rate**
 - **Formula:** (New Followers - Unfollows) / Total Followers x 100
-- **Meaning:** Net audience growth normalised for audience size
+- **Meaning:** Net audience growth normalized for audience size
 
 **Content Velocity**
 - **Formula:** Posts Published / Time Period

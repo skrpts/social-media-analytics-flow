@@ -102,7 +102,7 @@ Present to marketing leadership with data-backed recommendations.
 
 ### Making Data Actionable
 
-The gap between data and action is where most analytics programmes fail. Follow this framework:
+The gap between data and action is where most analytics programs fail. Follow this framework:
 
 #### The Insight-to-Action Bridge
 
@@ -120,7 +120,7 @@ If you cannot complete this sentence, the insight is not actionable yet.
 1. **Reporting without recommending** — A report that says "engagement dropped 15%" without explaining why or what to do about it is useless.
 2. **Confusing correlation with causation** — Posting at 9am correlates with higher engagement, but that might be because you post your best content at 9am, not because 9am is magic.
 3. **Ignoring context** — A 20% engagement drop during a holiday week is not alarming. A 20% drop during a product launch is.
-4. **Optimising for the wrong metric** — Maximising impressions is easy (post provocative content). Maximising valuable engagement is harder and more useful.
+4. **Optimizing for the wrong metric** — Maximizing impressions is easy (post provocative content). Maximizing valuable engagement is harder and more useful.
 5. **Analysis paralysis** — Do not wait for perfect data. Make decisions on directionally correct data and iterate.
 
 ### Building a Testing Culture
@@ -133,7 +133,7 @@ The best social media teams test constantly. Establish a simple testing framewor
 4. **Decision:** If the hypothesis is confirmed, adopt the change. If not, document the learning and move on.
 
 Test ideas to get started:
-- Posting time optimisation (same content, different days/times)
+- Posting time optimization (same content, different days/times)
 - Caption length (short punchy vs. long detailed)
 - Visual style (photography vs. graphics vs. user-generated)
 - Call-to-action phrasing (question vs. statement vs. instruction)

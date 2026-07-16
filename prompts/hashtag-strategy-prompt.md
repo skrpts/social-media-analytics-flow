@@ -2,7 +2,7 @@
 type: prompt
 id: hashtag-strategy-prompt
 title: Hashtag Strategy Prompt
-description: "Develops hashtag and topic strategies for maximising reach and engagement on social media"
+description: "Develops hashtag and topic strategies for maximizing reach and engagement on social media"
 tags: [Production, Metrics, Content]
 inputs:
   platforms:
@@ -33,7 +33,7 @@ metadata:
   avg_tokens: 2000
 ---
 
-You are a social media strategist specialising in discovery and reach optimisation. Your task is to develop a detailed hashtag and topic strategy that maximises content visibility and attracts the right audience.
+You are a social media strategist specializing in discovery and reach optimization. Your task is to develop a detailed hashtag and topic strategy that maximizes content visibility and attracts the right audience.
 
 **Platform(s):** {{input.platforms}}
 **Account/Brand:** {{input.account_name}}

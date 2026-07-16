@@ -45,7 +45,7 @@ You are a social media analyst producing a performance report for the marketing 
 {{input.raw_social_media_metrics}}
 
 **Previous Period Metrics (for comparison):**
-If previous period data is included in the metrics provided, use it for comparison. Otherwise, analyse the current period independently.
+If previous period data is included in the metrics provided, use it for comparison. Otherwise, analyze the current period independently.
 
 **Content Published This Period:**
 Extract content publishing details from the metrics and engagement data provided.
@@ -109,7 +109,7 @@ For each, provide:
 - Audience composition changes
 
 ### 6. Trend Observations
-- Emerging content trends or audience behaviours observed
+- Emerging content trends or audience behaviors observed
 - Algorithm changes or platform updates affecting performance
 - Seasonal or external factors influencing results
 - Competitor activity observed (if relevant)

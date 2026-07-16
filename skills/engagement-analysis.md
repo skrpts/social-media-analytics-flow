@@ -2,7 +2,7 @@
 type: skill
 id: engagement-analysis
 title: Engagement Analysis
-description: "Analyses social media engagement metrics to identify performance patterns, trends, and actionable insights"
+description: "Analyzes social media engagement metrics to identify performance patterns, trends, and actionable insights"
 tags: [Production, Tested, Metrics, Content]
 connections:
   - target: llm-service
@@ -28,7 +28,7 @@ Processes raw social media engagement data to identify meaningful patterns, tren
 
 ## Process
 
-1. **Metric Normalisation** — Standardise metrics across the reporting period. Calculate engagement rate (engagements / impressions or reach), click-through rate, amplification rate (shares per post), and conversation rate (comments per post). Normalise for follower count changes during the period.
+1. **Metric Normalization** — Standardize metrics across the reporting period. Calculate engagement rate (engagements / impressions or reach), click-through rate, amplification rate (shares per post), and conversation rate (comments per post). Normalize for follower count changes during the period.
 
 2. **Trend Identification** — Compare current period metrics against:
    - Previous period (week-over-week or month-over-month)
@@ -43,7 +43,7 @@ Processes raw social media engagement data to identify meaningful patterns, tren
    - Click-through rate (action metric)
    - Shares/saves (value metric)
 
-   Identify the top 10% and bottom 10% of content. Analyse what distinguishes high performers from low performers.
+   Identify the top 10% and bottom 10% of content. Analyze what distinguishes high performers from low performers.
 
 4. **Engagement Pattern Analysis** — Identify patterns in when and how the audience engages:
    - Day-of-week engagement patterns
@@ -78,7 +78,7 @@ Processes raw social media engagement data to identify meaningful patterns, tren
 ## Constraints
 
 - Never treat vanity metrics (likes, follower count) as the primary measure of success without context
-- Always normalise metrics for follower count and posting frequency changes
+- Always normalize metrics for follower count and posting frequency changes
 - Distinguish between organic and paid performance when data allows
 - Avoid drawing conclusions from insufficient data — state minimum sample sizes needed
 - Account for platform algorithm changes when interpreting reach and engagement trends

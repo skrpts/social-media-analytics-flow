@@ -1,8 +1,8 @@
 ---
 type: skill
 id: content-performance-modelling
-title: Content Performance Modelling
-description: "Identifies the variables that drive social media content performance and builds predictive models for optimisation"
+title: Content Performance Modeling
+description: "Identifies the variables that drive social media content performance and builds predictive models for optimization"
 tags: [Production, Tested, Content, Metrics]
 connections:
   - target: llm-service
@@ -16,19 +16,19 @@ metadata:
 
 ## Capability
 
-Analyses historical content performance data to identify which variables correlate with high engagement, reach, and conversion. Builds a content performance model that predicts what types of content are likely to perform well, enabling data-driven content planning.
+Analyzes historical content performance data to identify which variables correlate with high engagement, reach, and conversion. Builds a content performance model that predicts what types of content are likely to perform well, enabling data-driven content planning.
 
 ## When to Use
 
 - Planning a content calendar based on performance data rather than intuition
 - Diagnosing why recent content is underperforming
 - Justifying content strategy changes with data to stakeholders
-- Optimising content mix allocation across formats and topics
+- Optimizing content mix allocation across formats and topics
 - Testing hypotheses about what drives performance on specific platforms
 
 ## Process
 
-1. **Variable Identification** — Catalogue the variables that might influence content performance:
+1. **Variable Identification** — Catalog the variables that might influence content performance:
    - **Content variables:** Format (image, video, carousel, text, link), topic/theme, length (caption length, video duration), visual style, tone (humorous, educational, inspirational, provocative)
    - **Timing variables:** Day of week, time of day, proximity to events or trends, posting frequency
    - **Engagement variables:** Use of questions, calls to action, hashtag strategy, tagging strategy
@@ -47,7 +47,7 @@ Analyses historical content performance data to identify which variables correla
    - **Diminishing returns:** Where more effort produces less incremental result
    - **Surprise performers:** Content that broke the model — what was different?
 
-4. **Content Mix Optimisation** — Based on the model, recommend:
+4. **Content Mix Optimization** — Based on the model, recommend:
    - Optimal content mix by format (e.g., 40% video, 30% carousel, 20% static image, 10% text)
    - Topic allocation (which themes deserve more or less airtime)
    - Posting frequency and cadence recommendations
@@ -70,7 +70,7 @@ Analyses historical content performance data to identify which variables correla
 - Historical content performance data (minimum 30 posts, ideally 100+)
 - Content metadata (format, topic, length, visual style, posting time)
 - Platform analytics (reach, impressions, engagement by type, click-throughs)
-- Follower count over time (to normalise for audience growth)
+- Follower count over time (to normalize for audience growth)
 
 ## Outputs
 

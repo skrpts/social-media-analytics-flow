@@ -2,7 +2,7 @@
 type: skill
 id: audience-profiling
 title: Audience Profiling
-description: "Builds audience profiles from social media engagement patterns, demographics, and behavioural signals"
+description: "Builds audience profiles from social media engagement patterns, demographics, and behavioral signals"
 tags: [Production, Tested, Audience, Metrics]
 connections:
   - target: llm-service
@@ -16,7 +16,7 @@ metadata:
 
 ## Capability
 
-Constructs detailed audience profiles from social media data by analysing who engages with content, how they engage, what they engage with, and when they are most active. Produces actionable audience segments that inform content strategy, posting schedules, and messaging approaches.
+Constructs detailed audience profiles from social media data by analyzing who engages with content, how they engage, what they engage with, and when they are most active. Produces actionable audience segments that inform content strategy, posting schedules, and messaging approaches.
 
 ## When to Use
 
@@ -28,9 +28,9 @@ Constructs detailed audience profiles from social media data by analysing who en
 
 ## Process
 
-1. **Demographic Analysis** — Where platform analytics provide demographic data (age, gender, location, language), summarise the audience composition. Identify the core demographic segments and any underrepresented segments that might be growth opportunities.
+1. **Demographic Analysis** — Where platform analytics provide demographic data (age, gender, location, language), summarize the audience composition. Identify the core demographic segments and any underrepresented segments that might be growth opportunities.
 
-2. **Behavioural Segmentation** — Segment the audience by engagement behaviour:
+2. **Behavioral Segmentation** — Segment the audience by engagement behavior:
    - **Passive consumers:** Follow and view content but rarely engage
    - **Casual engagers:** Occasionally like or react to content
    - **Active participants:** Regularly comment, share, and save content
@@ -39,7 +39,7 @@ Constructs detailed audience profiles from social media data by analysing who en
 
    Estimate the proportion in each segment based on engagement data.
 
-3. **Content Preference Mapping** — Analyse which content types, topics, and formats resonate with different audience segments:
+3. **Content Preference Mapping** — Analyze which content types, topics, and formats resonate with different audience segments:
    - Which topics generate the most comments (indicating strong opinions)?
    - Which formats get the most saves (indicating high perceived value)?
    - Which content types drive the most shares (indicating audience alignment)?
@@ -75,7 +75,7 @@ Constructs detailed audience profiles from social media data by analysing who en
 
 ## Outputs
 
-- 2-4 audience profiles with demographic, behavioural, and preference characteristics
+- 2-4 audience profiles with demographic, behavioral, and preference characteristics
 - Content preference matrix by audience segment
 - Optimal posting schedule by audience segment
 - Audience growth opportunities (underserved segments)

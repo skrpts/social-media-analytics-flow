@@ -2,7 +2,7 @@
 type: workflow
 id: social-media-analytics-flow
 title: Social Media Analytics Flow
-description: "Social media performance analysis, content strategy optimisation, and audience insight extraction"
+description: "Social media performance analysis, content strategy optimization, and audience insight extraction"
 tags: [Production, Tested, Audience, Metrics]
 connections:
   - target: engagement-analysis
@@ -60,7 +60,7 @@ execution:
 
 ## Overview
 
-This workflow analyses social media performance data to produce actionable insights, content strategy recommendations, and audience intelligence. It moves from raw metrics analysis through audience profiling, content performance modelling, and strategic recommendations. Designed to run on a regular cadence (weekly or monthly) to track trends and optimise social media strategy.
+This workflow analyzes social media performance data to produce actionable insights, content strategy recommendations, and audience intelligence. It moves from raw metrics analysis through audience profiling, content performance modeling, and strategic recommendations. Designed to run on a regular cadence (weekly or monthly) to track trends and optimize social media strategy.
 
 ## Pipeline Stages
 
@@ -80,13 +80,13 @@ Invoke the **engagement-analysis** skill to process raw metrics and identify per
 
 Invoke the **audience-profiling** skill to build audience profiles from engagement patterns. Then run the **audience-insight-extractor** prompt to produce detailed audience intelligence.
 
-**Output:** Audience profiles including content preferences, peak activity times, demographic indicators, and engagement behaviour patterns.
+**Output:** Audience profiles including content preferences, peak activity times, demographic indicators, and engagement behavior patterns.
 
-### Stage 3: Content Performance Modelling
+### Stage 3: Content Performance Modeling
 
 **Input:** Performance data from Stage 1, audience insights from Stage 2, content calendar and posting history
 
-Invoke the **content-performance-modelling** skill to identify what drives high performance. Analyse content by format, topic, posting time, length, visual style, and tone to build a performance model.
+Invoke the **content-performance-modelling** skill to identify what drives high performance. Analyze content by format, topic, posting time, length, visual style, and tone to build a performance model.
 
 **Output:** Content performance model showing which variables correlate with high engagement, reach, and conversion.
 
@@ -128,7 +128,7 @@ Invoke the **content-strategy-advisor** prompt to produce strategic recommendati
 
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
-| `{{input.platforms}}` | Yes | Social media platforms being analysed | `Instagram, LinkedIn, X, TikTok` |
+| `{{input.platforms}}` | Yes | Social media platforms being analyzed | `Instagram, LinkedIn, X, TikTok` |
 | `{{input.account_name}}` | Yes | Account or brand name | `Acme Corp` |
 | `{{input.industry}}` | Yes | Industry or niche | `B2B SaaS marketing` |
 | `{{input.raw_social_media_metrics}}` | Yes | Raw social media metrics exported from platform analytics across the reporting period | `Paste the latest metrics, exported data, or summary notes relevant to the workflow.` |
@@ -141,7 +141,7 @@ Invoke the **content-strategy-advisor** prompt to produce strategic recommendati
 | Name | Description |
 |------|-------------|
 | Performance report | Performance report with key metrics, trend analysis, top-performing content identification, and underperforming content flags |
-| Audience profiles including content preferences, peak activity times, demographic indicators, and engagement behaviour patterns | Audience profiles including content preferences, peak activity times, demographic indicators, and engagement behaviour patterns |
+| Audience profiles including content preferences, peak activity times, demographic indicators, and engagement behavior patterns | Audience profiles including content preferences, peak activity times, demographic indicators, and engagement behavior patterns |
 | Content performance model showing which variables correlate | Content performance model showing which variables correlate with high engagement, reach, and conversion |
 | Platform comparison matrix | Platform comparison matrix with resource allocation recommendations |
 | Content strategy adjustment recommendations, updated posting schedule, content mix recommendations, hashtag strategy, and topic calendar suggestions | Content strategy adjustment recommendations, updated posting schedule, content mix recommendations, hashtag strategy, and topic calendar suggestions |
@@ -151,7 +151,7 @@ Invoke the **content-strategy-advisor** prompt to produce strategic recommendati
 Before running this workflow:
 
 1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
-2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+2. Review the included documents, assets, or source nodes and customize them to match your team, brand, or domain conventions where needed.
 3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
 
 ## Provider Notes

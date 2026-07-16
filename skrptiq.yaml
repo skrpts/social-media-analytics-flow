@@ -1,8 +1,8 @@
 id: "b66ef7b3-87ec-44a8-a61c-e8d1352ca6ce"
 name: "social-media-analytics-flow"
 display_name: "Social Media Analytics Flow"
-description: "Social media performance analysis, content strategy optimisation, and audience insight extraction"
-version: "1.1.23"
+description: "Social media performance analysis, content strategy optimization, and audience insight extraction"
+version: "1.1.24"
 engine: ">=0.1.0"
 
 author:
@@ -30,16 +30,16 @@ dependencies:
     checksum: "sha256:eb6a5a515b11d9d03f972b4781b4f9789e93d6524ada98658d13c9811f7b55e1"
   - id: "a79f8fcc-6b8f-4510-9314-394b7b4492f0"
     name: "generate-visual-spec"
-    version: 1.0.1
-    checksum: "sha256:98d9bbb95bb9427538787aa645c7eb479be365b4b7bfd9604fdaa841280d6a28"
+    version: 1.0.3
+    checksum: "sha256:d203a6a3b8fd758fff814ba9402e7a4829d9b90c3b8b1c355af35ff8e087b639"
   - id: "fcab9536-a13e-49c9-b0c3-bb3097682e69"
     name: "llm-service"
-    version: 1.0.1
-    checksum: "sha256:455c8bf590a9426d830bffd1a741afa058149bc29c58186c34d0d8699bea4bda"
+    version: 1.0.3
+    checksum: "sha256:18783015383c041de9c3fdaa191b79172ab534348448c20c74f9a967ab4dd917"
   - id: "18479da6-a5f3-4755-b9a4-5bdbc9196b0d"
     name: "segment-audience"
-    version: 1.0.1
-    checksum: "sha256:0b175d41bfbf4caba8ef410095f2fbdfd3084352376817a96259340e07ad09e4"
+    version: 1.0.5
+    checksum: "sha256:862cccc2bdc4b9b3c862aa6405c9969b0aa32c42f785611ec4fca7d602e0ba96"
   - id: "a8ee94d5-a20c-414a-a882-a8d3e9b9f6ab"
     name: "visual-spec-generation"
     version: 1.0.1
@@ -66,7 +66,7 @@ contents:
 
 security:
   status: "pass"
-  scanned_at: "2026-07-03T16:01:34.136Z"
+  scanned_at: "2026-07-16T20:30:29.565Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"

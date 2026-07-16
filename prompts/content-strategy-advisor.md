@@ -49,7 +49,7 @@ Review the current content pillars (themes/categories) against performance data:
 - Which pillars are underperforming? Diagnose whether the issue is topic relevance, execution quality, or audience mismatch. Recommend adjustments or retirement.
 - Are there content themes the audience responds to that are not currently part of the strategy? Recommend new pillars with supporting evidence.
 
-### 2. Format & Channel Optimisation
+### 2. Format & Channel Optimization
 Based on the performance model:
 - Recommend the optimal content format mix per platform (percentage allocation)
 - Identify formats to invest in (growing engagement) and formats to phase out (declining returns)
@@ -77,7 +77,7 @@ Propose 3 specific experiments for the next reporting period:
 Each experiment should be small enough to execute within existing resources and measurable within one reporting cycle.
 
 ### 6. Implementation Roadmap
-Prioritise all recommendations into:
+Prioritize all recommendations into:
 - **Quick wins (this week):** Changes that require minimal effort and can be implemented immediately
 - **Short-term (this month):** Strategy adjustments that need planning but not major resource investment
 - **Medium-term (next quarter):** Larger strategic shifts that require testing and validation
