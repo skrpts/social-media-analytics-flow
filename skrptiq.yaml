@@ -2,7 +2,7 @@ id: "b66ef7b3-87ec-44a8-a61c-e8d1352ca6ce"
 name: "social-media-analytics-flow"
 display_name: "Social Media Analytics Flow"
 description: "Social media performance analysis, content strategy optimization, and audience insight extraction"
-version: "1.1.24"
+version: "1.1.26"
 engine: ">=0.1.0"
 
 author:
@@ -22,28 +22,28 @@ tags:
 dependencies:
   - id: "977ca840-8322-4df1-bc13-98d43b3e41a8"
     name: "audience-segmentation"
-    version: 1.0.1
-    checksum: "sha256:bcd35f100fcf4843c8b8583541ae60952e1cb5d6001700f56c5e85533f0f672b"
+    version: 1.0.2
+    checksum: "sha256:913727caeec5a262ab4213fe98b04f2506620f895d877f41637cb0cdf40bb87b"
   - id: "847dbe80-fe03-452c-be57-052a527f5e87"
     name: "campaign-performance-benchmarks"
-    version: 1.0.1
-    checksum: "sha256:eb6a5a515b11d9d03f972b4781b4f9789e93d6524ada98658d13c9811f7b55e1"
+    version: 1.0.2
+    checksum: "sha256:36e4d9663bdb567e8f6510020152a5d395c9b626a6659d5937091b25a5341302"
   - id: "a79f8fcc-6b8f-4510-9314-394b7b4492f0"
     name: "generate-visual-spec"
-    version: 1.0.3
-    checksum: "sha256:d203a6a3b8fd758fff814ba9402e7a4829d9b90c3b8b1c355af35ff8e087b639"
+    version: 1.0.4
+    checksum: "sha256:25be978eff7d0683b76f45cdda233e67b54c9bc937e5466a2aa6975e34067b48"
   - id: "fcab9536-a13e-49c9-b0c3-bb3097682e69"
     name: "llm-service"
     version: 1.0.3
     checksum: "sha256:18783015383c041de9c3fdaa191b79172ab534348448c20c74f9a967ab4dd917"
   - id: "18479da6-a5f3-4755-b9a4-5bdbc9196b0d"
     name: "segment-audience"
-    version: 1.0.5
-    checksum: "sha256:862cccc2bdc4b9b3c862aa6405c9969b0aa32c42f785611ec4fca7d602e0ba96"
+    version: 1.0.6
+    checksum: "sha256:65b9dfcddb27fbe622b8e7ca15e049b31308dad171a58cdb157ab060f635c42f"
   - id: "a8ee94d5-a20c-414a-a882-a8d3e9b9f6ab"
     name: "visual-spec-generation"
-    version: 1.0.1
-    checksum: "sha256:22d79483954e4fd298636955aa9a376bd042ee3d8238fbc5d30e961cbdb9be4a"
+    version: 1.0.2
+    checksum: "sha256:3e1e3d5b542cae73b84b937c7d1f46dba9505cb5a6dcea5362c252f201f0e0f1"
 
 requires:
   services:
@@ -55,18 +55,18 @@ requires:
     - "audience-data"
 
 contents:
-  skills: 3
+  skills: 5
   prompts: 5
   workflows: 1
   services: 0
   sources: 1
   documents: 1
   assets: 1
-  total: 12
+  total: 14
 
 security:
   status: "pass"
-  scanned_at: "2026-07-16T20:30:29.565Z"
+  scanned_at: "2026-10-28T20:59:33.129Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"

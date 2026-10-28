@@ -1,5 +1,28 @@
 # Release Notes
 
+## v1.1.26
+GH#1045 — run the platform comparison and hashtag strategy stages this pipeline documents. `platform-comparison-prompt` (Stage 4) and `hashtag-strategy-prompt` (Stage 5) both shipped declared and uninvoked, so the flow produced neither the cross-platform resource recommendation nor the hashtag strategy its own Outputs table promises.
+
+Added `platform-comparison` and `hashtag-strategy` backing skills — Stage 4's prose names no skill and Stage 5's prompt would otherwise have had to share a slug, and two entries on one skill share a title so one is silently dropped.
+
+Two more labels that read the wrong source, neither flagged by any rule because the references resolved. `platform-comparison-prompt` asked for "Platform Performance Data" via `{{steps.previous.output}}`, which is whatever happens to precede it rather than the performance report; it is now bound to Engagement Analysis, which its label names. `hashtag-strategy-prompt` asked for "Content Pillars: based on the content performance model" while reading `{{steps.Engagement Analysis.output}}` — Stage 1's output, not the content model — and used the same reference again for hashtag performance. Each is now a declared slot bound to the stage its own label names. Skills 3→5, total 12→14.
+
+## v1.1.25
+GH#1100 consumer wave (batch 2) — declare the data flow this workflow was resolving positionally.
+
+Each stage below now receives its input through a declared `bindings:` entry instead of `default_from_previous`, which K-073 revoked. **The value is unchanged**: every binding names the step that immediately precedes it, which is exactly what the positional default resolved to. What changes is that the dependency is stated rather than inferred from position, so a reorder can no longer silently feed a stage the wrong artefact.
+
+Bindings added:
+  `segment-audience` ← `from_step: "Content Performance Modeling"` (step 4)
+  `generate-visual-spec` ← `from_step: "Audience Segmentation"` (step 5)
+
+Dependency pins moved to the published versions that declare these slots:
+  `audience-segmentation` 1.0.1 → 1.0.2
+  `campaign-performance-benchmarks` 1.0.1 → 1.0.2
+  `generate-visual-spec` 1.0.3 → 1.0.4
+  `segment-audience` 1.0.5 → 1.0.6
+  `visual-spec-generation` 1.0.1 → 1.0.2
+
 ## v1.1.24
 GH#845 — republish with American English (en-US) content, completing the source-only GH#805 flip that never reached the Hub. Copy only — no functional or behaviour change.
 

@@ -4,6 +4,11 @@ id: platform-comparison-prompt
 title: Platform Comparison Prompt
 description: "Compares social media performance across platforms and recommends resource allocation"
 tags: [Production, Metrics, Planning]
+context_params:
+  performance_data:
+    label: "Platform performance data"
+    description: "The performance report covering each platform. Supplied by the invoking workflow from the engagement analysis stage."
+    required: true
 inputs:
   platforms:
     label: "Platforms"
@@ -34,7 +39,7 @@ You are a social media strategist evaluating cross-platform performance to optim
 **Business Goals:** Based on the industry context and metrics provided, identify the key business goals for social media.
 
 **Platform Performance Data:**
-{{steps.previous.output}}
+{{step.context.performance_data}}
 
 **Current Resource Allocation:**
 Estimate current resource allocation based on posting frequency and content volume across platforms from the metrics data.

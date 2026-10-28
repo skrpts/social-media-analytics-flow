@@ -7,6 +7,10 @@ tags: [Production, Tested, Audience, Metrics]
 connections:
   - target: engagement-analysis
     type: uses
+  - target: platform-comparison
+    type: uses
+  - target: hashtag-strategy
+    type: uses
   - target: audience-profiling
     type: uses
   - target: content-performance-modelling
@@ -46,16 +50,46 @@ execution:
     step_type: "synthesis"
     prompt: "content-strategy-advisor"
     output: { name: "content_strategy", type: "text" }
+  - skill: "platform-comparison"
+    prompt: "platform-comparison-prompt"
+    step_type: "synthesis"
+    output: { name: "platform_comparison", type: "text" }
+    bindings:
+      performance_data:
+        from_step: "Engagement Analysis"
+        field: output
+  - skill: "hashtag-strategy"
+    prompt: "hashtag-strategy-prompt"
+    step_type: "synthesis"
+    output: { name: "hashtag_strategy", type: "text" }
+    bindings:
+      audience_insights:
+        from_step: "Audience Profiling"
+        field: output
+      content_model:
+        from_step: "Content Performance Modeling"
+        field: output
+      performance_data:
+        from_step: "Engagement Analysis"
+        field: output
   - skill: "audience-segmentation"
     prompt: "segment-audience"
     step_type: "synthesis"
     output: { name: "audience_segments", type: "list" }
     context:
       market_context: "No additional market context"
+    bindings:
+      source:
+        from_step: "Content Performance Modeling"
+        field: output
   - skill: "visual-spec-generation"
     prompt: "generate-visual-spec"
     step_type: "synthesis"
     output: { name: "visual_spec", type: "text" }
+    bindings:
+      source:
+        from_step: "Audience Segmentation"
+        field: output
 ---
 
 ## Overview

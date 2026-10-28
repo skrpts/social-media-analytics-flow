@@ -4,6 +4,19 @@ id: hashtag-strategy-prompt
 title: Hashtag Strategy Prompt
 description: "Develops hashtag and topic strategies for maximizing reach and engagement on social media"
 tags: [Production, Metrics, Content]
+context_params:
+  audience_insights:
+    label: "Audience insights"
+    description: "The audience profile. Supplied by the invoking workflow from the audience profiling stage."
+    required: true
+  content_model:
+    label: "Content performance model"
+    description: "The content performance model the content pillars are drawn from. Supplied by the invoking workflow."
+    required: true
+  performance_data:
+    label: "Performance report"
+    description: "The performance report and engagement data used to judge how current hashtags perform. Supplied by the invoking workflow."
+    required: true
 inputs:
   platforms:
     label: "Platforms"
@@ -38,13 +51,13 @@ You are a social media strategist specializing in discovery and reach optimizati
 **Platform(s):** {{input.platforms}}
 **Account/Brand:** {{input.account_name}}
 **Industry/Niche:** {{input.industry}}
-**Target Audience:** Based on the audience insights: {{steps.Audience Profiling.output}}
-**Content Pillars:** Based on the content performance model, identify the main content pillars: {{steps.Engagement Analysis.output}}
+**Target Audience:** Based on the audience insights: {{step.context.audience_insights}}
+**Content Pillars:** Based on the content performance model, identify the main content pillars: {{step.context.content_model}}
 **Current Hashtag Usage:** Extract current hashtag usage from the engagement and metrics data provided.
 **Current Follower Count:** Extract follower counts from the raw metrics data.
 
 **Performance Data for Hashtag Usage:**
-Using the performance report and engagement data provided, identify how current hashtags are performing: {{steps.Engagement Analysis.output}}
+Using the performance report and engagement data provided, identify how current hashtags are performing: {{step.context.performance_data}}
 
 ## Instructions
 
