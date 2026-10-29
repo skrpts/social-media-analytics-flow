@@ -1,5 +1,14 @@
 # Release Notes
 
+## v1.1.27
+GH#1100 retrospective repair — two bindings that resolved and served while feeding the wrong artefact.
+
+`generate-visual-spec`'s slot is labelled **"Analysis Results"** and was bound to Audience Segmentation, so the visualisation spec was derived from audience segments rather than from any analysis. Re-bound to Engagement Analysis, whose performance report is the analysis result.
+
+`segment-audience`'s slot is labelled **"Product or Campaign"** and was bound to Content Performance Modeling — a content strategy, not a product. Nothing in this flow produces a product description, so this is `from_step` where `from_input` was needed: a new required `product_or_campaign` input now carries it.
+
+**This flow now requires an input it did not require before.** Previously the user supplied nothing and the segmentation silently ran against a content strategy rather than a product. The new input makes the requirement visible instead of guessing at it.
+
 ## v1.1.26
 GH#1045 — run the platform comparison and hashtag strategy stages this pipeline documents. `platform-comparison-prompt` (Stage 4) and `hashtag-strategy-prompt` (Stage 5) both shipped declared and uninvoked, so the flow produced neither the cross-platform resource recommendation nor the hashtag strategy its own Outputs table promises.
 

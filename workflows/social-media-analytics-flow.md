@@ -27,6 +27,13 @@ connections:
     type: references
   - target: visual-spec-generation
     type: uses
+inputs:
+  product_or_campaign:
+    label: "Product or Campaign"
+    description: "The product or campaign the audience is being segmented for"
+    example: "Q3 launch of our mobile app, targeting freelance designers"
+    required: true
+    type: text
 metadata:
   estimated_duration: "20-35 minutes"
   trigger: manual
@@ -80,15 +87,14 @@ execution:
       market_context: "No additional market context"
     bindings:
       source:
-        from_step: "Content Performance Modeling"
-        field: output
+        from_input: "product_or_campaign"
   - skill: "visual-spec-generation"
     prompt: "generate-visual-spec"
     step_type: "synthesis"
     output: { name: "visual_spec", type: "text" }
     bindings:
       source:
-        from_step: "Audience Segmentation"
+        from_step: "Engagement Analysis"
         field: output
 ---
 
